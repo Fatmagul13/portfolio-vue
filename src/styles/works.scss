@@ -1,0 +1,87 @@
+.bg-works {
+  background-color: #222;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  .carousel {
+    margin: 50px;
+  }
+
+  .carousel__slide {
+    padding: 10px;
+  }
+  .carousel__item {
+    min-height: 200px;
+    width: 100%;
+    //background-color: #642afb;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    box-sizing: content-box;
+    border: 5px solid #222;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #642afb;
+  }
+
+  .carousel__slide:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .title {
+    padding-top: 100px;  
+    color: white;
+    letter-spacing: 3px;
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    color: white;
+  }
+
+  .works_title {
+    color: white;
+
+    font-size: 28px;
+  }
+  .separator {
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 15px;
+    width: 150px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,128 @@
+.bg-comments {
+  margin: 0;
+  background-color: #f0f0f0;
+  background-attachment: fixed;
+  position: relative;
+  height: 100%;
+
+  .comment-list #comment-state {
+    color: gray;
+    text-align: left;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .row {
+    height: 100%;
+    padding: 50px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .add-comment-form {
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    .comment-form {
+      font-family: 16px;
+
+      max-width: 400px;
+      width: 100%;
+    }
+    .comment-form input[type="text"],
+    .comment-form textarea {
+      border: solid 1px #e8e8e8;
+      font-family: "Roboto", sans-serif;
+      padding: 10px 7px;
+      margin-bottom: 15px;
+      outline: none;
+      width: 100%;
+    }
+
+    .comment-form textarea {
+      resize: none;
+    }
+    .comment-form p{
+      margin-bottom: 10px;
+    }
+
+    .comment-form input[type="text"],
+    .comment-form textarea,
+    .comment-form .button {
+      font-size: 15px;
+      border-radius: 3px;
+    }
+    .comment-form .button {
+      background: #642afb;
+      border: solid 1px #642afb;
+      color: white;
+      cursor: pointer;
+      padding: 10px 50px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .comment-form .button:hover {
+      background: #963fff;
+      border: solid 1px #963fff;
+    }
+  }
+
+  .comment-card {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border: 1px solid #bfbfbf;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    display: block;
+    margin-right: 20px;
+    border-radius: 3px;
+
+    #user-img {
+      width: 10%;
+      max-width: 24px;
+      height: 24px;
+      margin-right: 20px;
+    }
+    #bin-img {
+      width: 10%;
+      max-width: 24px;
+      height: 24px;
+      margin-left: 20px;
+      align: right;
+    }
+    #comment-info {
+      width: 80%;
+    }
+    h2,
+    p {
+      text-align: left;
+    }
+  }
+
+  .title {
+    padding-top: 100px;
+    padding-bottom:50px;
+    color: #363636;
+    letter-spacing: 3px;
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-comments .column {
+    width: 100%;
+  }
+}

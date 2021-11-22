@@ -1,0 +1,19 @@
+$colors: (
+  primary: #353535,
+  secondary: #3c6e71,
+  complementary: #284b63,
+  light: whitesmoke,
+  dark: #d9d9d9,
+  error: #ff2818,
+);
+
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px,
+);
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("~@/assets/fonts/Montserrat-Medium.ttf");
+}
