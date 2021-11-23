@@ -34,8 +34,13 @@
           <li class="list-group-item" v-if="contact.github !== ''">
             <h3 class="d-inline"><i class="fab fa-github"></i> Github: </h3>
             <br class="d-md-none" />
-
             <a :href="contact.github" target="_blank"> {{ contact.github }}</a>
+          </li>
+          <br class="d-md-none" />
+          <li class="list-group-item" v-if="contact.github !== ''">
+            <h3 class="d-inline"><i class="fab fa-github"></i> LinkedIn: </h3>
+            <br class="d-md-none" />
+            <a :href="contact.linkedin" target="_blank"> Fatma Gül Yurtseven </a>
           </li>
         </ul>
       </div>
@@ -81,7 +86,8 @@ export default {
         city: "Bursa, TURKEY",
         email: "yurtsevenfatmagul@gmail.com",
         phone: "0534 123 44 55",
-        github : "https://github.com/Fatmagul13"
+        github : "https://github.com/Fatmagul13",
+        linkedin: "https://www.linkedin.com/in/fatma-g%C3%BCl-yurtseven-a8a32b145/"
       },
 
       isSending: false,
