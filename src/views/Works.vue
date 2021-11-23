@@ -37,7 +37,6 @@ export default {
       settings: {
         itemsToShow: 1,
         snapAlign: "center",
-        wrapAround:"true",
       },
       breakpoints: {
       // 700px and up
